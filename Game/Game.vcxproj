@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DDC9C490-CC45-4332-8DB1-AE3EEF407809}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)SDL2_image-2.0.0\include;$(ProjectDir)SDL2_ttf-2.0.12\include;$(ProjectDir)SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget);$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget);$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)SDL2_image-2.0.0\include;$(ProjectDir)SDL2_ttf-2.0.12\include;$(ProjectDir)SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget);$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget);$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)SDL2_image-2.0.0\include;$(ProjectDir)SDL2_ttf-2.0.12\include;$(ProjectDir)SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget);$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget);$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)SDL2_image-2.0.0\include;$(ProjectDir)SDL2_ttf-2.0.12\include;$(ProjectDir)SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget);$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget);$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)SDL2.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\libfreetype-6.dll" "$(OutDir)libfreetype-6.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\SDL2_ttf.dll" "$(OutDir)SDL2_ttf.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libjpeg-9.dll" "$(OutDir)libjpeg-9.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libpng16-16.dll" "$(OutDir)libpng16-16.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libtiff-5.dll" "$(OutDir)libtiff-5.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libwebp-4.dll" "$(OutDir)libwebp-4.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\SDL2_image.dll" "$(OutDir)SDL2_image.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+MKDIR "$(OutDir)data\" &gt; NUL
+COPY "$(ProjectDir)data\1up.png" "$(OutDir)data\1up.png" &gt; NUL
+COPY "$(ProjectDir)data\background.png" "$(OutDir)data\background.png" &gt; NUL
+COPY "$(ProjectDir)data\char.png" "$(OutDir)data\char.png" &gt; NUL
+COPY "$(ProjectDir)data\boo.png" "$(OutDir)data\boo.png" &gt; NUL
+COPY "$(ProjectDir)data\font.ttf" "$(OutDir)data\font.ttf" &gt; NUL
+COPY "$(ProjectDir)data\heartContainer.png" "$(OutDir)data\heartContainer.png" &gt; NUL
+COPY "$(ProjectDir)data\live.png" "$(OutDir)data\live.png" &gt; NUL
+COPY "$(ProjectDir)data\star.png" "$(OutDir)data\star.png" &gt; NUL
+COPY "$(ProjectDir)data\tileset.png" "$(OutDir)data\tileset.png" &gt; NUL</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying SDL DLL's</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)SDL2.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\libfreetype-6.dll" "$(OutDir)libfreetype-6.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\SDL2_ttf.dll" "$(OutDir)SDL2_ttf.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libjpeg-9.dll" "$(OutDir)libjpeg-9.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libpng16-16.dll" "$(OutDir)libpng16-16.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libtiff-5.dll" "$(OutDir)libtiff-5.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libwebp-4.dll" "$(OutDir)libwebp-4.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\SDL2_image.dll" "$(OutDir)SDL2_image.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+MKDIR "$(OutDir)data\" &gt; NUL
+COPY "$(ProjectDir)data\1up.png" "$(OutDir)data\1up.png" &gt; NUL
+COPY "$(ProjectDir)data\background.png" "$(OutDir)data\background.png" &gt; NUL
+COPY "$(ProjectDir)data\char.png" "$(OutDir)data\char.png" &gt; NUL
+COPY "$(ProjectDir)data\boo.png" "$(OutDir)data\boo.png" &gt; NUL
+COPY "$(ProjectDir)data\font.ttf" "$(OutDir)data\font.ttf" &gt; NUL
+COPY "$(ProjectDir)data\heartContainer.png" "$(OutDir)data\heartContainer.png" &gt; NUL
+COPY "$(ProjectDir)data\live.png" "$(OutDir)data\live.png" &gt; NUL
+COPY "$(ProjectDir)data\star.png" "$(OutDir)data\star.png" &gt; NUL
+COPY "$(ProjectDir)data\tileset.png" "$(OutDir)data\tileset.png" &gt; NUL</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying SDL DLL's</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)SDL2.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\libfreetype-6.dll" "$(OutDir)libfreetype-6.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\SDL2_ttf.dll" "$(OutDir)SDL2_ttf.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libjpeg-9.dll" "$(OutDir)libjpeg-9.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libpng16-16.dll" "$(OutDir)libpng16-16.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libtiff-5.dll" "$(OutDir)libtiff-5.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libwebp-4.dll" "$(OutDir)libwebp-4.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\SDL2_image.dll" "$(OutDir)SDL2_image.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+MKDIR "$(OutDir)data\" &gt; NUL
+COPY "$(ProjectDir)data\1up.png" "$(OutDir)data\1up.png" &gt; NUL
+COPY "$(ProjectDir)data\background.png" "$(OutDir)data\background.png" &gt; NUL
+COPY "$(ProjectDir)data\char.png" "$(OutDir)data\char.png" &gt; NUL
+COPY "$(ProjectDir)data\boo.png" "$(OutDir)data\boo.png" &gt; NUL
+COPY "$(ProjectDir)data\font.ttf" "$(OutDir)data\font.ttf" &gt; NUL
+COPY "$(ProjectDir)data\heartContainer.png" "$(OutDir)data\heartContainer.png" &gt; NUL
+COPY "$(ProjectDir)data\live.png" "$(OutDir)data\live.png" &gt; NUL
+COPY "$(ProjectDir)data\star.png" "$(OutDir)data\star.png" &gt; NUL
+COPY "$(ProjectDir)data\tileset.png" "$(OutDir)data\tileset.png" &gt; NUL</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying SDL DLL's</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(ProjectDir)SDL2-2.0.3\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)SDL2.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\libfreetype-6.dll" "$(OutDir)libfreetype-6.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\SDL2_ttf.dll" "$(OutDir)SDL2_ttf.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_ttf-2.0.12\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libjpeg-9.dll" "$(OutDir)libjpeg-9.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libpng16-16.dll" "$(OutDir)libpng16-16.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libtiff-5.dll" "$(OutDir)libtiff-5.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\libwebp-4.dll" "$(OutDir)libwebp-4.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\SDL2_image.dll" "$(OutDir)SDL2_image.dll" &gt; NUL
+COPY "$(ProjectDir)SDL2_image-2.0.0\lib\$(PlatformTarget)\zlib1.dll" "$(OutDir)zlib1.dll" &gt; NUL
+MKDIR "$(OutDir)data\" &gt; NUL
+COPY "$(ProjectDir)data\1up.png" "$(OutDir)data\1up.png" &gt; NUL
+COPY "$(ProjectDir)data\background.png" "$(OutDir)data\background.png" &gt; NUL
+COPY "$(ProjectDir)data\char.png" "$(OutDir)data\char.png" &gt; NUL
+COPY "$(ProjectDir)data\boo.png" "$(OutDir)data\boo.png" &gt; NUL
+COPY "$(ProjectDir)data\font.ttf" "$(OutDir)data\font.ttf" &gt; NUL
+COPY "$(ProjectDir)data\heartContainer.png" "$(OutDir)data\heartContainer.png" &gt; NUL
+COPY "$(ProjectDir)data\live.png" "$(OutDir)data\live.png" &gt; NUL
+COPY "$(ProjectDir)data\star.png" "$(OutDir)data\star.png" &gt; NUL
+COPY "$(ProjectDir)data\tileset.png" "$(OutDir)data\tileset.png" &gt; NUL</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying SDL DLL's</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine.c" />
+    <ClCompile Include="game.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="math.c" />
+    <ClCompile Include="platfrom.c" />
+    <ClCompile Include="renderer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\1up.png" />
+    <Image Include="data\background.png" />
+    <Image Include="data\boo.png" />
+    <Image Include="data\char.png" />
+    <Image Include="data\heartContainer.png" />
+    <Image Include="data\live.png" />
+    <Image Include="data\star.png" />
+    <Image Include="data\tileset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="data\font.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
